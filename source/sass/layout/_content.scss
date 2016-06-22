@@ -1,0 +1,134 @@
+.wrapper {
+  width: $content_width;
+  margin: 40px auto;
+  overflow: hidden;
+
+  .row {
+    margin: 0;
+  }
+
+  .jumbotron {
+    margin: 30px 45px 0 45px;
+    padding-bottom: 35px;
+
+    background: #fff url(../images/backgrounds/jumbotron_bg.png) no-repeat center;
+    background-size: cover;
+
+    .container {
+      padding: 55px 55px 0 55px;
+    }
+
+    h1 {
+      font: 48px/36px 'proxima_nova_rgbold', 'Verdana', sans-serif;
+      text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.42);
+    }
+
+    p {
+      font: 18px/24px 'proxima_nova_rgregular', 'Verdana', sans-serif;
+      width: 645px;
+    }
+
+    .btn {
+      width: 186px;
+      background: #fff url(../images/buttons/btn_main.png) no-repeat center;
+      border: none;
+    }
+
+    .main_button {
+      font: 14px/34px 'proxima_nova_rgbold', 'Verdana', sans-serif;
+    }
+  } //end of .jumbotron
+
+  .content_without_jumbotron {
+    margin: 0 45px 0 45px;
+  } //end of .content_without_jumbotron
+
+  .left_menu {
+    //margin: 0 45px 35px 0;
+    padding-bottom: 35px;
+    padding-left: 0;
+
+    float: left;
+
+    .sidebar-module {
+      ol > li {
+        font: 14px/24px 'proxima_nova_rgbold', 'Verdana', sans-serif;
+
+        i {
+          padding-right: 25px;
+        }
+      }
+
+      a {
+        color: $olive_font_color;
+      }
+    } // end of .left_menu
+
+    .input-group {
+      width: 163px;
+    }
+  } // end of .left_menu
+
+  .latest_posts {
+    float: left;
+    //width: 675px;
+    //margin-left: 50px;
+    margin-bottom: 80px;
+    padding-right: 0;
+
+    .title_row {
+      .counter_tooltip {
+        width: 40px;
+        background: #fff url('../images/buttons/tooltip_bg.png') no-repeat right;
+
+        display: inline-block;
+        float: right;
+        text-align: right;
+        padding: 0 7px 0 7px;
+
+        font: 11px/24px 'proxima_nova_rgbold', 'Verdana', sans-serif;
+        color: #fff;
+      }
+    }
+
+    .pull-left {
+      padding-right: 40px;
+    }
+
+    .comment {
+      padding-top: 5px;
+      font: 14px/24px 'proxima_nova_rgregular', 'Verdana', sans-serif;
+
+      .morelink {
+        color: $orange_color;
+        font-weight: bold;
+      }
+    }
+  } // end of .latest_posts
+}
+
+h2 {
+  color: $olive_grey_font_color;
+}
+
+h3 {
+  font: 24px/24px 'proxima_nova_rgregular', 'Verdana', sans-serif;
+  color: $orange_color;
+
+  display: inline-block;
+}
+
+h4 {
+  font: italic 12px/24px 'Georgia', 'Verdana', sans-serif;
+  color: $grey_font;
+
+  margin: 0;
+
+  i {
+    padding: 5px;
+  }
+}
+
+.orange_color {
+  color: $orange_color;
+}

@@ -1,10 +1,239 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Markup of the responsive page</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css"> <!-- reset all pre-defined styles -->
+    <link href="css/vendors/bootstrap.min.css" rel="stylesheet"> <!-- bootstrap styles-->
+    <link rel="stylesheet" href="css/vendors/font-awesome.css"> <!-- icon font's style -->
+    <link rel="stylesheet" href="css/base.css"> <!-- our general styles-->
 </head>
 <body>
+    <div class="page_wrapper grey_bg">
+        <!--Top part with logo, navigation bar and links-->
+        <header class="page_header white_bg">
+            <div class="header_wrapper">
+                    <!--Logo-->
+                    <a class="navbar-brand" href="#">
+                        <img class="img-responsive" src="images/Logo.png">
+                    </a>
+                    <!--Main menu-->
+                    <nav class="main_menu">
+                        <p><i class="fa fa-truck" aria-hidden="true"></i>  FREE SHIPPING ON ALL ORDERS EXTENDED TO JULY 31</p>
+                        <div class="collapse navbar-collapse navbar-ex1-collapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="# ">Products</a></li>
+                                <li><a href="# ">Buyer's Guide</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Your Cart <span class="badge">(4)</span></a></li>
+                            </ul>
+                        </div>
+                    </nav>
 
+                    <!--Menu for personal account and search-->
+                    <nav class="account_menu">
+                        <!--Links-->
+                        <div class="collapse navbar-collapse navbar-ex1-collapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="# ">My Account</a></li>
+                                <li><a href="# ">Track Order</a></li>
+                                <li><a href="#">Whishlist</a></li>
+                                <li><a href="#">Sign Out</a></li>
+                            </ul>
+                        </div>
+                        <!--Search input-->
+                        <div class="input-group pull-right">
+                            <input type="text" class="form-control grey_bg" placeholder="Search Costgro....">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default grey_bg" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </span>
+                        </div>
+                    </nav>
+            </div>
+        </header>
+
+        <!--General content of the page-->
+        <div class="wrapper white_bg">
+            <!--Block with MAIN BUTTON-->
+            <div class="row">
+                <div class="jumbotron">
+                    <div class="container">
+                        <h1>Latest Blog Post</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p><a class="btn btn-primary btn_lg main_button" href="#" role="button">MAIN BUTTON</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row content_without_jumbotron">
+                <!--Left panel with menu-->
+                <aside class="col-xs-3 col-sm-3 col-md-3 col-lg-3 left_menu">
+                    <div class="sidebar-module">
+                        <h2>CATEGORIES</h2>
+                        <ol class="list-unstyled">
+                            <li><a href="#">Category 1</a></li>
+                            <li><a href="#">Category 2</a></li>
+                            <li><a href="#">Category 3</a></li>
+                        </ol>
+                    </div>
+
+                    <div class="sidebar-module">
+                        <h2>ARCHIVES</h2>
+                        <ol class="list-unstyled">
+                            <li><a href="#">July 2013</a></li>
+                            <li><a href="#">June 2013</a></li>
+                            <li><a href="#">May 2013</a></li>
+                        </ol>
+                    </div>
+
+                    <div class="sidebar-module">
+                        <h2>FOLLOW US</h2>
+                        <ol class="list-unstyled">
+                            <li><a href="#"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i>Facebook</a></li>
+                            <li><a href="#"><i class="fa fa-pinterest fa-fw" aria-hidden="true"></i>Pinterest</a></li>
+                            <li><a href="#"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i>Instagram</a></li>
+                            <li><a href="#"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i>Twitter</a></li>
+                            <li><a href="#"><i class="fa fa-rss fa-fw orange_color" aria-hidden="true"></i>RSS Feed</a></li>
+                        </ol>
+                    </div>
+
+
+                    <h2>JOIN NEWSLETTER</h2>
+                    <!--Enter Your Email input-->
+                    <div class="input-group pull-left">
+                        <input type="text" class="form-control grey_bg" placeholder="Enter Your Email">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default grey_bg" type="button"><i class="fa fa-envelope" aria-hidden="true"></i></button>
+                    </span>
+                    </div>
+                </aside>
+
+                <!--Block with posts-->
+                <main class="col-xs-9 col-sm-9 col-md-9 col-lg-9 latest_posts">
+                    <h2>LATEST POSTS</h2>
+
+                    <section>
+                        <article class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/post_image.png" alt="image for the post">
+                            </a>
+                            <div class="media-body">
+                                <div class="title_row">
+                                    <h3 class="media-heading">New Laws In Washington</h3>
+                                    <div class="counter_tooltip">3</div>
+                                </div>
+                                <h4><i class="fa fa-clock-o" aria-hidden="true"></i> July 12, 2013 <i class="fa fa-user" aria-hidden="true"></i> Joe Shmoe</h4>
+                                <div class="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel pulvinar mi. Etiam rhoncus quam id aliquet rhoncus. Donec ac enim viverra, ornare nulla eget, mattis eros. Etiam turpis eros, finibus vitae metus a, cursus elementum magna. Nam eu lorem condimentum, mattis libero sit amet, efficitur urna. Duis ut lacus arcu. Vestibulum dapibus fermentum pretium. Sed blandit enim vel elit fermentum imperdiet. Etiam lacinia leo tortor, in auctor nibh fringilla nec.</div>
+                            </div>
+                        </article>
+                        <hr>
+                        <article class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/post_image.png" alt="image for the post">
+                            </a>
+                            <div class="media-body">
+                                <div class="title_row">
+                                    <h3 class="media-heading">New Laws In Washington</h3>
+                                    <div class="counter_tooltip">3</div>
+                                </div>
+                                <h4><i class="fa fa-clock-o" aria-hidden="true"></i> July 12, 2013 <i class="fa fa-user" aria-hidden="true"></i> Joe Shmoe</h4>
+                                <div class="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel pulvinar mi. Etiam rhoncus quam id aliquet rhoncus. Donec ac enim viverra, ornare nulla eget, mattis eros. Etiam turpis eros, finibus vitae metus a, cursus elementum magna. Nam eu lorem condimentum, mattis libero sit amet, efficitur urna. Duis ut lacus arcu. Vestibulum dapibus fermentum pretium. Sed blandit enim vel elit fermentum imperdiet. Etiam lacinia leo tortor, in auctor nibh fringilla nec.</div>
+                            </div>
+                        </article>
+                        <hr>
+                        <article class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/post_image.png" alt="image for the post">
+                            </a>
+                            <div class="media-body">
+                                <div class="title_row">
+                                    <h3 class="media-heading">New Laws In Washington</h3>
+                                    <div class="counter_tooltip">3</div>
+                                </div>
+                                <h4><i class="fa fa-clock-o" aria-hidden="true"></i> July 12, 2013 <i class="fa fa-user" aria-hidden="true"></i> Joe Shmoe</h4>
+                                <div class="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel pulvinar mi. Etiam rhoncus quam id aliquet rhoncus. Donec ac enim viverra, ornare nulla eget, mattis eros. Etiam turpis eros, finibus vitae metus a, cursus elementum magna. Nam eu lorem condimentum, mattis libero sit amet, efficitur urna. Duis ut lacus arcu. Vestibulum dapibus fermentum pretium. Sed blandit enim vel elit fermentum imperdiet. Etiam lacinia leo tortor, in auctor nibh fringilla nec.</div>
+                            </div>
+                        </article>
+                    </section>
+                </main>
+            </div>
+        </div>
+
+        <!--Footer with links-->
+        <footer class="page_footer olive_bg">
+            <div class="footer_wrapper container-fluid">
+                <div class="row-fluid">
+                    <!--first group-->
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 no_left_padding right_padding">
+                        <h2 class="title">CUSTOMER SERVICE</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#" target="_blank">Track Order</a></li>
+                            <li><a href="#" target="_blank">Shipping Policy</a></li>
+                            <li><a href="#" target="_blank">No-Hassle Return Policy</a></li>
+                            <li><a href="#" target="_blank">FAQ</a></li>
+                            <li><a href="#" target="_blank">Company Info</a></li>
+                            <li><a href="#" target="_blank">Customer Testimonials</a></li>
+                            <li><a href="#" target="_blank">Privacy Policy</a></li>
+                            <li><a href="#" target="_blank">Sitemap</a></li>
+                        </ul>
+                    </div>
+                    <!--second group-->
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 left_padding right_padding">
+                        <h2 class="title">SHOP COSTGRO</h2>
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 no_left_padding right_padding">
+                                <ul class="list-unstyled">
+                                    <li><a href="#" target="_blank">Air / HVAC</a></li>
+                                    <li><a href="#" target="_blank">Controllers, Timers & Meters</a></li>
+                                    <li><a href="#" target="_blank">Grow Media</a></li>
+                                    <li><a href="#" target="_blank">Grow Systems</a></li>
+                                    <li><a href="#" target="_blank">Grow Tents</a></li>
+                                    <li><a href="#" target="_blank">Lighting</a></li>
+                                    <li><a href="#" target="_blank">Nutrients</a></li>
+                                    <li><a href="#" target="_blank">Pest & Disease Control</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 left_padding right_padding">
+                                <ul class="list-unstyled">
+                                    <li><a href="#" target="_blank">pH / TDS Solutions & Meters</a></li>
+                                    <li><a href="#" target="_blank">Pots & Containers</a></li>
+                                    <li><a href="#" target="_blank">Propagation</a></li>
+                                    <li><a href="#" target="_blank">Tools & Accessories</a></li>
+                                    <li><a href="#" target="_blank">Grow Trays, Reservoirs & Stands</a></li>
+                                    <li><a href="#" target="_blank">Water</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--third group-->
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 left_padding no_right_padding">
+                        <h2 class="title">FOLLOW COSTGRO</h2>
+                        <ol class="list-unstyled">
+                            <li><a href="#"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i>Facebook</a></li>
+                            <li><a href="#"><i class="fa fa-pinterest fa-fw" aria-hidden="true"></i>Pinterest</a></li>
+                            <li><a href="#"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i>Instagram</a></li>
+                            <li><a href="#"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i>Twitter</a></li>
+                        </ol>
+
+                        <h2 class="title">SEARCH COSTGRO</h2>
+                        <!--Search input-->
+                        <div class="input-group pull-left">
+                            <input type="text" class="form-control grey_bg" placeholder="Start search...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default grey_bg" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script language="JavaScript" type="text/javascript" src="js/vendors/jquery-3.0.0.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/vendors/jquery.shorten.1.0.js"></script>
+    <!-- Our main.js -->
+    <script src="js/main.js"></script>
 </body>
 </html>

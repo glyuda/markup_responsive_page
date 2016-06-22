@@ -3,6 +3,7 @@
 //our modules
     var gulp = require('gulp');
     var sass = require('gulp-sass');
+    var autoprefixer = require('gulp-autoprefixer');
 
 //all paths we use
     var paths = {
@@ -56,12 +57,13 @@
             .pipe(gulp.dest(paths.dest.html))
     });
 
+
     gulp.task('cssCreate', function() {
         gulp.src(paths.src.css)
             .pipe(sass())
+            .pipe(autoprefixer('last 2 versions'))
             .pipe(gulp.dest(paths.dest.css));
     });
-
     gulp.task('cssVendorsMove', function() {
         gulp.src(paths.src.css_vendors)
             .pipe(gulp.dest(paths.dest.css))

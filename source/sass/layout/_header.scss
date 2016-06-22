@@ -1,0 +1,88 @@
+.page_header {
+  height: 90px;
+  padding-bottom: 40px;
+
+  .header_wrapper {
+    width: 1030px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    .navbar-brand {
+      padding: 0;
+      display: block;
+      float: left;
+
+    }
+    // end of .navbar-brand
+
+    .navbar-brand > img {
+      padding-top: 10px;
+      width: 126px;
+    }
+
+    .main_menu {
+      padding: 5px 15px 25px 15px;
+      float: left;
+
+      p {
+        padding-left: 40px;
+        margin: 0;
+
+        color: $orange_font_color;
+        font: 11px/36px 'proxima_nova_rgbold', 'Verdana', sans-serif;
+
+        .fa {
+          padding-right: 7px;
+        }
+      }
+      ul {
+        padding-top: 10px;
+
+        li > a {
+          font: 16px/14px 'proxima_nova_rgbold', 'Verdana', sans-serif;
+          color: $olive_font_color;
+
+          border-right: 1px solid $olive_font_color;
+          display: block;
+          padding-left: 25px;
+          padding-right: 25px;
+        }
+
+        li:last-child > a {
+          border-right: 0;
+        }
+      }
+    }
+    // end of .main_menu
+
+    .account_menu {
+      padding: 5px 0 25px 15px;
+      float: right;
+
+      ul {
+        li > a {
+          font: 12px/10px 'proxima_nova_rgbold', 'Verdana', sans-serif;
+          color: $dark_grey_font_color;
+
+          margin-top: 14px;
+          margin-bottom: 10px;
+
+          border-right: 1px solid $dark_grey_font_color;
+          display: block;
+          padding-left: 6px;
+          padding-right: 6px;
+        }
+
+        li:last-child > a {
+          border-right: 0;
+        }
+      }
+      // end of .account_menu
+    }
+    // end of .header_wrapper
+
+    .badge {
+      color: $orange_color;
+    }
+  }
+}
