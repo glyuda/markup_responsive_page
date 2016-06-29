@@ -3,86 +3,78 @@
   padding-bottom: 40px;
 
   .header_wrapper {
-    width: 1030px;
+    //width settings
+    width: $content_width;
+
+    @media all and (min-width: 992px) and (max-width: 1199px) {
+      width: $content_width_992;
+    }
+
+    @media all and (min-width: 768px) and (max-width: 991px) {
+      width: $content_width_768;
+    }
+
+    @media all and (min-width: 544px) and (max-width: 767px) {
+      width: $content_width_544;
+    }
+
+    @media all and (max-width: 543px) {
+      width: $content_width_320;
+    }
+
     margin: 0 auto;
     overflow: hidden;
 
+    .container-fluid {
+      padding: 0px;
+    }
+
+    .navbar-header {
+      margin: 0;
+      width: 100%;
+    }
+
     .navbar-brand {
       padding: 0;
-      display: block;
-      float: left;
+      margin-left: 0;
+      height: auto;
 
-    }
-    // end of .navbar-brand
-
-    .navbar-brand > img {
-      padding-top: 10px;
-      width: 126px;
-    }
-
-    .main_menu {
-      padding: 5px 15px 25px 15px;
-      float: left;
-
-      p {
-        padding-left: 40px;
-        margin: 0;
-
-        color: $orange_font_color;
-        font: 11px/36px 'proxima_nova_rgbold', 'Verdana', sans-serif;
-
-        .fa {
-          padding-right: 7px;
-        }
-      }
-      ul {
+      img {
         padding-top: 10px;
+        width: 126px;
 
-        li > a {
-          font: 16px/14px 'proxima_nova_rgbold', 'Verdana', sans-serif;
-          color: $olive_font_color;
-
-          border-right: 1px solid $olive_font_color;
-          display: block;
-          padding-left: 25px;
-          padding-right: 25px;
+        @media all and (max-width: 991px) {
+          width: 106px;
         }
+      } // end of img
+    } //end of .navbar-brand
 
-        li:last-child > a {
-          border-right: 0;
-        }
-      }
-    }
-    // end of .main_menu
+    .navbar-nav {
+      li > a {
+        background-color: white;
 
-    .account_menu {
-      padding: 5px 0 25px 15px;
-      float: right;
-
-      ul {
-        li > a {
-          font: 12px/10px 'proxima_nova_rgbold', 'Verdana', sans-serif;
-          color: $dark_grey_font_color;
-
-          margin-top: 14px;
-          margin-bottom: 10px;
-
-          border-right: 1px solid $dark_grey_font_color;
-          display: block;
-          padding-left: 6px;
-          padding-right: 6px;
-        }
-
-        li:last-child > a {
-          border-right: 0;
+        &:hover {
+          background-color: $grey_color;
+          color: $orange_font_color;
         }
       }
-      // end of .account_menu
-    }
-    // end of .header_wrapper
+    } // end of .navbar-nav
+
+    .navbar-toggle {
+      margin: 0;
+      height: 50px;
+      width: 58px;
+      border-color: $olive_color;
+
+      .icon-bar {
+        margin-left: auto;
+        margin-right: auto;
+        background-color: $olive_color;
+      }  // end of .icon-bar
+    } // end of .navbar-toggle
 
     .badge {
       color: $orange_color;
     }
-  }
-}
+  } // end of .header_wrapper
+} // end of .page_header
